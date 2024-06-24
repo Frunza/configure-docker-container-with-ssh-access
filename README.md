@@ -29,6 +29,8 @@ aaaaaaaaaaa
 ```
 Note the syntax: it needs double quotation marks at the beginning and the end of the ssh key value.
 
+Note: if you use GitLab, the value of the environment variable must contain the content only, without the double quotation marks.
+
 ## Implementation
 
 When building the docker image, pass an argument to it to provide the value of the `TARGET_MACHINE_SSH_PRIVATE_KEY` environment variable:
