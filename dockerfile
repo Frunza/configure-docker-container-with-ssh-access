@@ -9,5 +9,3 @@ ARG SSH_PRIVATE_KEY
 RUN mkdir -p /root/.ssh
 # Write the private key content to id_rsa file
 RUN echo "$SSH_PRIVATE_KEY" | tr -d '\r' > /root/.ssh/id_rsa && chmod 600 /root/.ssh/id_rsa
-
-CMD ["sh"]
